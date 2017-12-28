@@ -60,6 +60,7 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-gtco-nav-toggle').removeClass('active');
+					$('.nav-logo').removeClass('silver').addClass('blue');
 
 	    	}
 		});
