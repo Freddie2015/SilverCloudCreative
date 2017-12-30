@@ -8,6 +8,10 @@
 * 	Template Style
 *
 * ======================================================= */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
 body {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
@@ -15,7 +19,6 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
-  -webkit-font-smoothing: antialiased;
 }
 
 #page {

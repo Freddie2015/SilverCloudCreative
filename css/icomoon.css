@@ -33,6 +33,9 @@
 .icon-mail:before {
   content: "\e002";
 }
+.icon-display:before {
+  content: "\ea53";
+}
 .icon-toggle:before {
   content: "\e003";
 }
