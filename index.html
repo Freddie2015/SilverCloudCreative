@@ -77,7 +77,7 @@
 				<div class="col-s-2 menu-2 ">
 					<ul>
 						<li><a href="index.html">Services</a></li>
-						<li><a href="about.html">Contact</a></li>
+						<li><a onclick='scroll_to_div()'>Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -430,26 +430,43 @@
 		<div class="gtco-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Get Started</h2>
+					<h2>Got a Project in Mind?</h2>
+					<p id="contactp">Fill out the form below with details of your project and we will be in touch.</p>
 				</div>
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-12">
 					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
 								<input type="email" class="form-control" id="email" placeholder="Email">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
-								<label for="password" class="sr-only">Password</label>
-								<input type="password" class="form-control" id="password" placeholder="Password">
+								<label for="company" class="sr-only">Company</label>
+								<input type="text" class="form-control" id="company" placeholder="Company">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Sign Up</button>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Full Name</label>
+								<input type="text" class="form-control" id="name" placeholder="Full Name">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="number" class="sr-only">Contact Number</label>
+								<input type="tel" class="form-control" id="number" placeholder="Contact Number">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<label for="project-details" class="sr-only">Tell us a bit about your project</label>
+							<textarea id="project-details" class="form-control" rows="4" cols="50" placeholder="Tell us a bit about your project."></textarea>
+						</div>
+						<div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+							<button id="form-button" type="submit" class="btn btn-default btn-block">Submit</button>
 						</div>
 					</form>
 				</div>

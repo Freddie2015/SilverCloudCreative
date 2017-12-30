@@ -20,7 +20,13 @@ body {
   color: #828282;
   background: #fff;
 }
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
+    max-width: 100%;
+}
 #page {
   position: relative;
   overflow-x: hidden;
@@ -609,6 +615,12 @@ form label {
   padding: 7em 0;
   clear: both;
 }
+#contactp {
+  color: #fff;
+}
+#form-button {
+  margin-top: 10px;
+}
 @media screen and (max-width: 768px) {
   #gtco-features,
   #gtco-features-2,
@@ -878,7 +890,7 @@ form label {
 #gtco-started {
   background: #4cc1bd;
   background: -moz-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #4cc1bd), color-stop(100%, #3f95ea));
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #1e76b0), color-stop(100%, #3f95ea));
   background: -webkit-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
   background: -o-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
   background: -ms-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);

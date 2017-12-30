@@ -245,8 +245,6 @@
 		});
 
 	};
-
-
 	// Loading page
 	var loaderPage = function() {
 		$(".gtco-loader").fadeOut("slow");
@@ -307,3 +305,8 @@
 	});
 
 }());
+function scroll_to_div(){
+		$('html, body').animate({
+    scrollTop: ($('#gtco-started').first().offset().top)
+	}, 500, 'easeInOutExpo');
+};
