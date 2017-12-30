@@ -28,7 +28,7 @@ body {
   transition: 0.5s;
 }
 .nav-logo {
-
+  margin: 0 auto;
 }
 .offcanvas #page {
   overflow: hidden;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   width: 100%;
   padding: 40px 0;
-  z-index: 1001;
+  z-index: 5000;
 }
 @media screen and (max-width: 768px) {
   .gtco-nav {
@@ -1419,16 +1419,22 @@ form label {
 .scroll{
   background-color: #ffffff;
   transition: All 0.5s ease-in-out;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  background-attachment: fixed;
+  z-index: 4999;
+  overflow: visible;
 }
 .scroll a{
   color: #1e76b0 !important;
 }
 .silver{
-  height: 35px;
-  width: 200px;
-  background-image: url('../images/logo-white.svg');
+  height: 150px;
+  width: 150px;
+  background-image: url('../images/Primary-White.svg');
   background-size: contain;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   transition: All 0.5s ease-in-out;
 }
