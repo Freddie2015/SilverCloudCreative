@@ -290,15 +290,18 @@
 	   //caches a jQuery object containing the header element
 	   var navLogo = $(".nav-logo");
 	   var navSize = $(".gtco-nav");
+		 var activeColor = $(".active-page");
 	   $(window).scroll(function() {
 	       var scroll = $(window).scrollTop();
 
 	       if (scroll >= 100) {
 	           navSize.removeClass('transparent').addClass("scroll");
 	           navLogo.removeClass('silver').addClass("blue");
+						 activeColor.removeClass("act-trans").addClass("act-scroll");
 	       } else {
 	           navSize.removeClass("scroll").addClass("transparent");
 	           navLogo.removeClass("blue").addClass('silver');
+						 activeColor.removeClass("act-scroll").addClass("act-trans");
 	       }
 	   });
 	});

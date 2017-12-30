@@ -59,7 +59,12 @@ a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
 }
-
+.act-trans > a{
+  color: #fff ;
+}
+.act-scoll > a{
+  color: #063d5b !important;
+}
 p {
   margin-bottom: 20px;
 }
@@ -228,8 +233,8 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
-.gtco-nav ul li.active > a {
-  color: #fff !important;
+.gtco-nav ul li.active-page > a {
+  color: #fff;
 }
 
 #gtco-header,
@@ -1090,7 +1095,7 @@ form label {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(12, 46, 69, 0.5);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 4px;
@@ -1416,7 +1421,7 @@ form label {
   transition: All 0.5s ease-in-out;
 }
 .scroll a{
-  color: #1e76b0!important;
+  color: #1e76b0 !important;
 }
 .silver{
   height: 35px;
