@@ -1251,7 +1251,9 @@ form label {
     display: block;
   }
 }
-
+.page-cover {
+  height: 50vh !important;
+}
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
