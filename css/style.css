@@ -120,6 +120,12 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .gtco-nav {
     padding: 20px 0;
+    position: relative;
+    top: 0;
+  }
+  .gtco-cover {
+    position: relative;
+    margin-top: -197px;
   }
 }
 .gtco-nav #gtco-logo {
@@ -330,8 +336,9 @@ h1, h2, h3, h4, h5, h6, figure {
   display: flex;
 }
 #hero-title{
-  font-family: 'Josefin Sans', Helvetica;
-  font-weight: 600;
+  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25em !important;
 }
 #hero-sub{
   font-family: 'Roboto', Helvetica;
@@ -351,9 +358,15 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   z-index: 10;
 }
+
 @media screen and (max-width: 768px) {
   .gtco-cover {
     height: 600px;
+  }
+  .silver {
+    background-image: url('../images/logo-white.svg') !important;
+    margin-top: 7px;
+    z-index: 7000;
   }
 }
 .gtco-cover .display-t,
@@ -620,6 +633,9 @@ form label {
 }
 #form-button {
   margin-top: 10px;
+  background-color: #fff !important;
+  color: #1e76b0 !important;
+  font-family: 'Josefin Sans', Helvetica, sans-serif !important;
 }
 @media screen and (max-width: 768px) {
   #gtco-features,
@@ -888,14 +904,14 @@ form label {
 }
 
 #gtco-started {
-  background: #4cc1bd;
-  background: -moz-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #1e76b0), color-stop(100%, #3f95ea));
-  background: -webkit-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
-  background: -o-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
-  background: -ms-linear-gradient(-45deg, #4cc1bd 0%, #3f95ea 100%);
-  background: linear-gradient(135deg, #4cc1bd 0%, #3f95ea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cc1bd', endColorstr='#3f95ea', GradientType=1 );
+  background: #1e76b0;
+  background: -moz-linear-gradient(-45deg, #1e76b0 0%, #074f77 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #1e76b0), color-stop(100%, #074f77));
+  background: -webkit-linear-gradient(-45deg, #1e76b0 0%, #074f77 100%);
+  background: -o-linear-gradient(-45deg, #1e76b0 0%, #074f77 100%);
+  background: -ms-linear-gradient(-45deg, #1e76b0 0%, #074f77 100%);
+  background: linear-gradient(135deg, #1e76b0 0%, #074f77 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76b0', endColorstr='#074f77', GradientType=1 );
 }
 #gtco-started .gtco-heading h2 {
   color: #fff;
@@ -1005,7 +1021,7 @@ form label {
 
 #gtco-offcanvas {
   position: absolute;
-  z-index: 1901;
+  z-index: 3001;
   width: 270px;
   background: #eeeeee;
   color: #1e76b0;
@@ -1164,10 +1180,10 @@ form label {
 }
 .gtco-nav-toggle.gtco-nav-white > i {
   color: #1e76b0;
-  background: #1e76b0;
+  background: #fff;
 }
 .gtco-nav-toggle.gtco-nav-white > i::before, .gtco-nav-toggle.gtco-nav-white > i::after {
-  background: #1e76b0;
+  background: #fff;
 }
 
 .gtco-nav-toggle i::before {
@@ -1192,6 +1208,7 @@ form label {
 
 .gtco-nav-toggle.active i::before {
   top: 0;
+  background: #1e76b0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
@@ -1201,6 +1218,7 @@ form label {
 
 .gtco-nav-toggle.active i::after {
   bottom: 0;
+  background: #1e76b0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
@@ -1219,12 +1237,15 @@ form label {
   display: none;
   height: 44px;
   width: 44px;
-  z-index: 2001;
+  z-index: 8000;
   border-bottom: none !important;
 }
 @media screen and (max-width: 768px) {
   .gtco-nav-toggle {
     display: block;
+  }
+  .transparent {
+    z-index: 3000;
   }
   #gtco-offcanvas {
     display: block;
@@ -1438,7 +1459,6 @@ form label {
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px #999;
   background-attachment: fixed;
-  z-index: 4999;
   overflow: visible;
 }
 .scroll a{
