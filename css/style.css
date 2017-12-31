@@ -339,6 +339,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: 'Josefin Sans', Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25em !important;
+  text-align: center;
 }
 #hero-sub{
   font-family: 'Roboto', Helvetica;
@@ -1484,5 +1485,31 @@ form label {
   background-repeat: no-repeat;
   transition: All 0.5s ease-in-out;
 }
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
 
-/*# sourceMappingURL=style.css.map */
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
